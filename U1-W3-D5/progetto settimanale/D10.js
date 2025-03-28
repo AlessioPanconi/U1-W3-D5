@@ -133,6 +133,7 @@ console.log(onlyLetters("Ciao sono bt3po e ho 2 mani"));
 /* ESERCIZIO 6
   Crea una funzione chiamata "isThisAnEmail" che riceve una stringa come parametro e ritorna true se la stringa è un valido indirizzo email.
 */
+/*
 function isThisAnEmail(email) {
   const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
   if (emailRegex.test(email)) {
@@ -141,6 +142,15 @@ function isThisAnEmail(email) {
     return false;
   }
 }
+*/
+function isThisAnEmail(email) {
+  if (email.includes("@") && email.includes(".")) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
 console.log(isThisAnEmail("apanconi94@gmail.com"));
 console.log(isThisAnEmail("pippo"));
 
